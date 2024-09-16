@@ -18,16 +18,24 @@
     src: url('../assets/fonts/Quicksand/Quicksand-Medium.ttf');
     // font-display: swap;
 }
-// @font-face {
-//     font-family: 'FontCaveat';
-//     src: url('../assets/fonts/caveat/Caveat-VariableFont_wght.ttf');
-//     font-display: swap;
-// }
-// @font-face {
-//     font-family: 'RobotoMono';
-//     src: url('../assets/fonts/caveat/RobotoMono.ttf');
-//     font-display: swap;
-// }
+
+@font-face {
+    font-family: 'FontCaveat';
+    src: url('../assets/fonts/caveat/Caveat-VariableFont_wght.ttf');
+    // font-display: swap;
+}
+
+@font-face {
+    font-family: 'MaShanZhangRegular';
+    src: url('../assets/fonts/MaShanZhang/MaShanZheng-Regular.ttf');
+    // font-display: swap;
+}
+
+@font-face {
+    font-family: 'KuaiLeRegular';
+    src: url('../assets/fonts/KuaiLe/ZCOOLKuaiLe-Regular.ttf');
+    // font-display: swap;
+}
 
 /* breakpoints */
 @first-breakpoint: 640px;
@@ -50,16 +58,16 @@
     background: linear-gradient(145deg,#0c0120 0,#65389b 96%);
     // background-color: #080808;
     background-color: linear-gradient(145deg,#0c0120 0,#65389b 96%);
-    background-color-on-element: lighten(#0d2438, 10%);
+    background-color-on-element: lighten(#65389b, 10%);
     text-color: white;
     text-color-hover: darken(white, 40%);
     cursor-color: white;
 }
 
 #light() {
-    background: white;
+    background: linear-gradient(145deg,#e1cbff 0,#ffffff 96%);
     background-color: #ffffff;
-    background-color-on-element: darken(#ffffff, 5%);
+    background-color-on-element: #ffffff;
     text-color: black;
     text-color-hover: lighten(black, 20%);
     cursor-color: black;

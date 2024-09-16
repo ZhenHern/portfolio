@@ -1,6 +1,6 @@
 {
     "navbar": {
-        "education": "Edukacja",
+        "education": "教育",
         "experience": "Doświadczenie",
         "skills": "Umiejętności",
         "projects": "Projekty",
@@ -14,8 +14,8 @@
     },
 
     "landingPage": {
-        "myNameIs": "Hej, nazywam się",
-        "name": "Maciek Iwaniuk.",
+        "myNameIs": "你好，我的名字是",
+        "name": "征恒。",
         "description": "Jestem studentem informatyki, skupionym na podnoszeniu swoich kompetencji. Wiążę swoją przyszłość z branżą IT i stale rozwijam się, aby być na bieżąco z najnowszymi technologiami."
     },
 
@@ -62,7 +62,7 @@
                 "content": "Rozwój aplikacji webowej związanej z zarządzaniem pracownikami przez firmy.",
                 "profession": "Programista PHP"
             },
-            "ebrand": {
+            "hokenso": {
                 "content": "Rozwój rozproszonego systemu opartego na architekturę mikroserwioswą związanego z ochroną marek online. Integracje z licznymi zewnętrznymi systemami przez API.",
                 "profession": "Programista PHP"
             }

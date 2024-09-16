@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import Navbar from '@/components/Navbar/Navbar.vue';
+import LandingPage from '@/components/LandingPage/LandingPage.vue';
+import Experience from '@/components/Experience/Experience.vue';
+
 import { DarkTheme, LightTheme } from '@/constants/app';
 
 import { useThemeStore } from '@/stores/theme';
@@ -13,9 +16,12 @@ const themeStore = useThemeStore();
         :class="{ 'container-dark-theme': themeStore.theme === DarkTheme,
                   'container-light-theme': themeStore.theme === LightTheme }"
     >
-    <!-- <img src="https://images.pexels.com/photos/631477/pexels-photo-631477.jpeg" alt="Falling Stars"> -->
-
         <Navbar />
+
+        <LandingPage />
+
+        <Experience />
+
   </main>
 </template>
 
@@ -32,8 +38,11 @@ const themeStore = useThemeStore();
         min-height: 200vh;
         width: 100%;
         font-family: 'QuicksandRegular', serif;
-
         transition: color ease @theme-switch-time;
+    }
+
+    .container:lang(zh) {
+        font-family: 'KuaiLeRegular', serif;
     }
 
     .section1 {

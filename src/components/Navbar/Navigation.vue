@@ -112,6 +112,11 @@ const navMenuStore = useNavMenuStore();
     }
 }
 
+.navigation:lang(zh) {
+    font-family: 'KuaiLeRegular', serif;
+    // font-weight: bold;
+}
+
 @media (min-width: @first-breakpoint) {
     .navigation {
         .nav-hamburger-toggler {

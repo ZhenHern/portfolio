@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { onMounted, onUnmounted} from 'vue';
 import { useLanguageSwitcher } from '@/composables/useLanguageSwitcher';
 import { useThemeStore } from '@/stores/theme';
 // import { useCursorHover } from '@/directives/useCursorHover';
@@ -9,6 +10,31 @@ const { t } = useLanguageSwitcher();
 const themeStore = useThemeStore();
 
 // const vCursorHover = useCursorHover();
+
+function applyRandomBlinking() {
+    const bulb = document.querySelector('.bulb') as HTMLElement;
+    if (bulb) {
+        // Generate random duration and delay
+        const randomDuration = Math.random() * (3 - 1) + 1; // Between 1s and 3s
+        const randomInterval = Math.random() * (5 - 2) + 2; // Between 2s and 5s
+        bulb.style.animation = `flicker ${randomDuration}s infinite`;
+        bulb.style.background = 'red';
+        // Clear previous animation and apply new random intervals
+        bulb.style.animationTimingFunction = 'steps(1)'; // Adjust if necessary
+    }
+}
+
+onMounted(() => {
+    // applyRandomBlinking();
+    // Update animation periodically
+    // const intervalId = setInterval(applyRandomBlinking, 5000);
+
+    // Clean up the interval on component unmount
+    onUnmounted(() => {
+        clearInterval(intervalId);
+    });
+});
+
 </script>
 
 <template>
@@ -77,8 +103,24 @@ const themeStore = useThemeStore();
             height: 0.8rem; /* Half the height for semicircle */
             background-color: #f0f0f0; /* Bulb color */
             border-radius: 0 0 2.25rem 2.25rem; /* Rounded corners to create semicircle */
-            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); /* Optional: glow effect */
+            box-shadow: 0 0 1rem 0.35rem rgba(250, 119, 250, 0.6);
+            animation: flicker 1.5s infinite; /* Apply flicker animation */
+            // animation: none;
         }
+    }
+}
+
+@keyframes flicker {
+    0%, 100% {
+        box-shadow: 0 0 0rem 0rem rgba(250, 119, 250, 0.6); /* Purple shadow effect */
+    }
+    50% {
+        // opacity: 0.5;
+        box-shadow: 0 0 1rem 0.35rem rgba(250, 119, 250, 0.6); /* Slightly lighter purple shadow */
+    }
+    25%, 75% {
+        // opacity: 0.7;
+        box-shadow: 0 0 1rem 0.35rem rgba(250, 119, 250, 0.6); /* Slightly darker purple shadow */
     }
 }
 </style>
