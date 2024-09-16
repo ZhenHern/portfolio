@@ -1,9 +1,15 @@
 <script setup lang="ts">
+import ThemeButton from '@/components/Navbar/ThemeButton.vue';
+import LanguageButtons from '@/components/Navbar/LanguageButtons.vue';
 import Navigation from '@/components/Navbar/Navigation.vue';
 </script>
 
 <template>
     <div class="navbar">
+        <ThemeButton />
+
+        <LanguageButtons />
+
         <Navigation />
     </div>
 </template>

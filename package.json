@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@intlify/vue-i18n-loader": "^4.2.0",
+    "@types/aos": "^3.0.7",
     "@types/node": "^22.5.5",
     "@types/vue": "^2.0.0",
     "@vitejs/plugin-vue": "^5.0.5",

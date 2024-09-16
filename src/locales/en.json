@@ -8,7 +8,7 @@
         "images": {
             "sun": "Change theme to light",
             "moon": "Change theme to dark",
-            "polishFlag": "Change language to Polish",
+            "chineseFlag": "Change language to Chinese",
             "greatBritainFlag": "Change language to English"
         }
     },

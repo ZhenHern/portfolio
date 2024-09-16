@@ -48,7 +48,7 @@ const navMenuStore = useNavMenuStore();
 @import '@/styles/variables.less';
 
 .navigation {
-    font-family: 'LatoFontBold', serif;
+    font-family: 'QuicksandBold', serif;
 
     .nav-hamburger-toggler {
         display: flex;
