@@ -1,0 +1,117 @@
+{
+    "navbar": {
+        "education": "Education",
+        "experience": "Experience",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact",
+        "images": {
+            "sun": "Change theme to light",
+            "moon": "Change theme to dark",
+            "polishFlag": "Change language to Polish",
+            "greatBritainFlag": "Change language to English"
+        }
+    },
+
+    "landingPage": {
+        "myNameIs": "Hi, my name is",
+        "name": "Maciek Iwaniuk.",
+        "description": "I am a computer science student, with a strong emphasis on enhancing my skills. I aspire to build my future in the IT industry and constantly strive to develop myself to stay up to date with the latest technologies."
+    },
+
+    "education": {
+        "title": "Education",
+        "educationItems": {
+            "zse": {
+                "title": "Secondary Technical School of Electrical Engineering in Bialystok",
+                "content": "I have gained a basic understanding of computer science, which not only broadened my horizons, but also gave me plenty of knowledge about databases and the development of desktop or web applications.",
+                "major": "Programmer technician"
+            },
+            "universityOfTechnology": {
+                "title": "Bialystok University of Technology",
+                "content": "Will expand IT-related knowledge.",
+                "major": "Computer science"
+            }
+        }
+    },
+
+    "experience": {
+        "title": "Experience",
+        "now": "now",
+        "year": "year",
+        "yearsFirstForm": "years",
+        "yearsSecondForm": "years",
+        "month": "month",
+        "months": "months",
+        "monthNames": {
+            "1": "Jan",
+            "2": "Feb",
+            "3": "Mar",
+            "4": "Apr",
+            "5": "May",
+            "6": "Jun",
+            "7": "Jul",
+            "8": "Aug",
+            "9": "Sep",
+            "10": "Oct",
+            "11": "Nov",
+            "12": "Dec"
+        },
+        "experienceItems": {
+            "merinosoft": {
+                "content": "Development of a web application relating to the management of employees in a company.",
+                "profession": "PHP Developer"
+            },
+            "ebrand": {
+                "content": "Development of a distributed microservices-based system relating to online brand protection. Integration with multiple external APIs.",
+                "profession": "PHP Developer"
+            }
+        }
+    },
+
+    "skills": {
+        "title": "Skills",
+        "useRegularly": "I use regularly",
+        "hadContact": "I had contact with"
+    },
+
+    "projects": {
+        "title": "Projects",
+        "projectsItems": {
+            "shopSystem": {
+                "title": "Shop system",
+                "content": "Backend of a simple store system. The project is based on CQRS made as a modular monolith. Directories are organized using Domain-Driven-Design approach."
+            },
+            "demoCryptoExchange": {
+                "title": "Demo crypto exchange",
+                "content": "A project of a demo cryptocurrency exchange that simulates the real functioning of an exchange, but uses fictional currency. Data regarding cryptocurrency prices is obtained from the API provided by the Binance exchange."
+            },
+            "snakeWebApp": {
+                "title": "Snake - web app",
+                "content": "This application handles data sent by the game application written in python. It has extensive user account functionality, along with a comprehensive, feature-rich admin panel."
+            },
+            "snakeGame": {
+                "title": "Snake - game",
+                "content": "This game reads and writes data through a web application API. The user competes against other users through a ranking, whilst earning currency that can then be spent on upgrades or skins that improve the gameplay experience."
+            },
+            "minesweeper": {
+                "title": "Minesweeper",
+                "content": "A sapper game with a selectable game difficulty and a save option, which saves choices as well as user records to the local browser memory."
+            },
+            "portfolio": {
+                "title": "Portfolio",
+                "content": "A website summarizing information about myself. It includes information about my education, commercial experience and projects, whilst being interactive and animated."
+            }
+        }
+    },
+
+    "contact": {
+        "title": "Contact"
+    },
+
+    "footer": {
+        "allRightsReserved": "© All rights reserved"
+    },
+
+    "author": "Maciek Iwaniuk"
+}
